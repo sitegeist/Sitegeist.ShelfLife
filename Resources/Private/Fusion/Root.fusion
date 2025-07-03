@@ -1,0 +1,6 @@
+prototype(Neos.Seo:XmlSitemap.Url) {
+    @context.__node__ = ${this.node}
+    //lastModificationDateTime.@process.overrideWithShelfLife = ${Sitegeist.ShelfLife.documentModificationDate(__node__)}
+    lastModificationDateTime.@process.overrideWithShelfLife = ${this.node ? Sitegeist.ShelfLife.documentModificationDate(__node__) : value}
+    lastModificationDateTime.@process.overrideWithShelfLife.@position = 'before format'
+}

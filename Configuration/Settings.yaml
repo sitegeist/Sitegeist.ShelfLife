@@ -1,0 +1,8 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        'Sitegeist.ShelfLife': true
+  Fusion:
+    defaultContext:
+      'Sitegeist.ShelfLife': 'Sitegeist\ShelfLife\Helper\ShelfLifeHelper'
