@@ -1,5 +1,5 @@
 # Sitegeist.ShelfLife
-## Modification in sitemap.xml that take content modifications into account
+## Last-modification-dates for Documents (sitemap.xml) that take content modifications into account
 
 Since Neos calculates the last modification dates for a document solely based on the last changes to the document-node itself those dates do not take changes to the content of the document into account because this would be an expensive calculation at read time.
 
